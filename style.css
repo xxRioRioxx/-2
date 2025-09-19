@@ -1,4 +1,4 @@
-/* 全体 */
+/* 全体の色 */
 body {
     margin: 0;
     padding: 0;
@@ -25,6 +25,46 @@ h1 {
     letter-spacing: 2px;
 }
 
+/* ナビゲーション全体 */
+.nav-links {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* ボタン */
+.nav-links a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #ffe2f4;
+  color: #4e2428;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* ホバー時の動き */
+.nav-links a:hover {
+  background-color: #ffd0ef;
+  color: #ff296c;
+  transform: scale(1.05);
+}
+
+/* スマホ版 */
+@media (max-width: 600px) {
+  .nav-links a {
+    display: block;
+    margin: 8px auto;
+    width: 60%;
+  }
+}
+
+/* 滑らかに動く */
+html {
+  scroll-behavior: smooth;
+}
+
 /* セクション */
 section {
     background-color: #fff;
@@ -38,12 +78,12 @@ section {
 /* セクション見出し */
 section h2 {
     text-align: center;
-    color: #963f62; /* 緑系でさわやか */
+    color: #963f62; 
     margin-bottom: 15px;
     font-size: 2.8em;
 }
 
-/* セクション内の文章 */
+/* セクション 文章 */
 section p {
     text-align: center;
     font-size: 1.5em;
